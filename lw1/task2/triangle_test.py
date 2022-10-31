@@ -7,7 +7,7 @@ RESULTS_PATH = 'Results/result.txt'
 TESTS_PATH = 'Tests/tests.txt'
 
 
-def runProcess(process: str, args: str) -> str:
+def run_process(process: str, args: str) -> str:
     output = subprocess.check_output(["py", process] + args.split())
     return output.decode("utf-8")
 
@@ -21,15 +21,16 @@ class MyTestCase(unittest.TestCase):
                 while i < len(lines):
                     test_line = lines[i].split(' || ')
                     input_case = test_line[0]
-                    expect_result = test_line[1]
+                    expect_result = test_line[1].rstrip('\r\n')
                     i += 1
-                    output = runProcess(PROGRAM_PATH, input_case)
-                    print(f"{i}. Testing case: triangle.py {input_case}")
-                    if expect_result is output:
-                        result.write('success;\n')
+                    output = run_process(PROGRAM_PATH, input_case).rstrip('\r\n')
+                    print(f"{i}. Testing case: {input_case}")
+                    if expect_result == output:
+                        result.write('success\n')
                     else:
-                        result.write('error;\n')
+                        result.write('error\n')
 
 
 if __name__ == '__main__':
     unittest.main()
+    
