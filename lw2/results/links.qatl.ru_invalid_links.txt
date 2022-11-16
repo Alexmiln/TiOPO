@@ -1,0 +1,11 @@
+invalid links
+1. http://links.qatl.ru/links/deny403forbidden.php || 403
+2. http://links.qatl.ru/links/502gateaway502.php || 502
+3. http://links.qatl.ru/links/un503availible.php || 503
+4. http://links.qatl.ru/links/return500bad.php || 500
+5. http://links.qatl.ru/links/404not404found404.php || 404
+6. http://links.qatl.ru/links/access401unauthorized.php || 401
+7. http://links.qatl.ru/links/locked.php || 423
+8. http://links.qatl.ru/links/teapot418.php || 500
+Total invalid links count: 8
+Checking date: 17/11/2022 00:55:13
