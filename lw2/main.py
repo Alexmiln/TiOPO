@@ -14,9 +14,9 @@ result = set()
 valid_links = set()
 invalid_links = set()
 
-# main_link = 'http://links.qatl.ru/'
+main_link = 'http://links.qatl.ru/'
 # main_link = 'http://lasdsadinks.qatl.ru/'
-main_link = 'https://www.travelline.ru/'
+# main_link = 'https://www.travelline.ru/'
 
 class LINK:
 	url: str
