@@ -1,14 +1,14 @@
 valid links
-1. http://links.qatl.ru/about.html || 200
-2. http://links.qatl.ru/links/found302.php || 302
-3. http://links.qatl.ru/work.html || 200
-4. http://links.qatl.ru/links/no204content.php || 204
-5. http://links.qatl.ru/blog-single.html || 200
-6. http://links.qatl.ru/index.html || 200
-7. http://links.qatl.ru/links/movedper.php || 301
-8. http://links.qatl.ru/ || 200
-9. http://links.qatl.ru/pricing.html || 200
-10. http://links.qatl.ru/blog.html || 200
-11. http://links.qatl.ru/contact.html || 200
+1. http://links.qatl.ru/links/found302.php || 302
+2. http://links.qatl.ru/contact.html || 200
+3. http://links.qatl.ru/blog-single.html || 200
+4. http://links.qatl.ru/work.html || 200
+5. http://links.qatl.ru/links/no204content.php || 204
+6. http://links.qatl.ru/about.html || 200
+7. http://links.qatl.ru/blog.html || 200
+8. http://links.qatl.ru/pricing.html || 200
+9. http://links.qatl.ru/index.html || 200
+10. http://links.qatl.ru/links/movedper.php || 301
+11. http://links.qatl.ru/ || 200
 Total valid links count: 11
-Checking date: 22/11/2022 16:31:35
+Checking date: 21/12/2022 21:39:59
