@@ -1,11 +1,11 @@
 invalid links
-1. http://links.qatl.ru/links/teapot418.php || 500
-2. http://links.qatl.ru/links/locked.php || 423
-3. http://links.qatl.ru/links/return500bad.php || 500
-4. http://links.qatl.ru/links/502gateaway502.php || 502
-5. http://links.qatl.ru/links/access401unauthorized.php || 401
-6. http://links.qatl.ru/links/deny403forbidden.php || 403
-7. http://links.qatl.ru/links/un503availible.php || 503
-8. http://links.qatl.ru/links/404not404found404.php || 404
+1. http://links.qatl.ru/links/access401unauthorized.php || 401
+2. http://links.qatl.ru/links/deny403forbidden.php || 403
+3. http://links.qatl.ru/links/404not404found404.php || 404
+4. http://links.qatl.ru/links/un503availible.php || 503
+5. http://links.qatl.ru/links/teapot418.php || 500
+6. http://links.qatl.ru/links/locked.php || 423
+7. http://links.qatl.ru/links/502gateaway502.php || 502
+8. http://links.qatl.ru/links/return500bad.php || 500
 Total invalid links count: 8
-Checking date: 21/12/2022 21:39:59
+Checking date: 21/12/2022 23:28:34
