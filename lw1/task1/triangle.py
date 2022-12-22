@@ -1,4 +1,5 @@
 import sys
+import math
 
 ORDINARY_TRIANGLE = 'обычный'
 ISOSCELES_TRIANGLE = 'равнобедренный'
@@ -12,13 +13,26 @@ def checkArgsCount():
 
 
 def getTriangleType(side1: float, side2: float, side3: float) -> str:
-    if (side1 + side2 <= side3) or (side1 + side3 <= side2) or (side2 + side3 <= side1):
+    def isValidLinesValue() -> bool:
+        MAX_VALID_LINE_VALUE = 2147483647
+        MIN_VALID_LINE_VALUE = 0.000001
+
+        return (side1 >= MIN_VALID_LINE_VALUE) and (side1 <= MAX_VALID_LINE_VALUE) \
+               and (side2 >= MIN_VALID_LINE_VALUE) and (side2 <= MAX_VALID_LINE_VALUE) \
+               and (side3 >= MIN_VALID_LINE_VALUE) and (side3 <= MAX_VALID_LINE_VALUE)
+
+    def isTriangle() -> bool:
+        return side1 + side2 > side3 and side3 + side2 > side1 and side1 + side3 > side2
+
+    if not isValidLinesValue() or not isTriangle():
         return NOT_A_TRIANGLE
 
-    if (side1 == side2) and (side1 == side3) and (side2 == side3):
+    if math.isclose(side1, side2, rel_tol=1e-14, abs_tol=0.0) and \
+            math.isclose(side3, side2, rel_tol=1e-14, abs_tol=0.0):
         return EQUILATERAL_TRIANGLE
 
-    if (side1 == side2) or (side1 == side3) or (side2 == side3):
+    if math.isclose(side1, side2, rel_tol=1e-14, abs_tol=0.0) or math.isclose(side3, side2, rel_tol=1e-14, abs_tol=0.0)\
+            or math.isclose(side1, side3, rel_tol=1e-14, abs_tol=0.0):
         return ISOSCELES_TRIANGLE
 
     return ORDINARY_TRIANGLE
